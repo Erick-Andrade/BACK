@@ -21,7 +21,7 @@ def upload():
     namespace_name = "grkjou41lac1"
     bucket_name = "pidaydemo"
 
-    config = oci.config.from_file('~/.oci/config')
+    config = oci.config.from_file('./.oci/config')
 
     dados = request.json
     imagem_base64 = dados['image'] 
